@@ -16,4 +16,6 @@ const cartProductSchema = new Schema<ICartProduct>({
         ref : "Product",
         required : [true,"Product id is required"]
     }
-},{timestamps : true})
+},{timestamps : true});
+
+export const CartProduct = model<ICartProduct>("CartProduct",cartProductSchema);
